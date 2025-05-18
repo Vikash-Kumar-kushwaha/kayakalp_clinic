@@ -60,6 +60,7 @@ $(document).ready(function() {
     // Initialize Magnific Popup for Gallery
     $('.gallery-link').magnificPopup({
         type: 'image',
+        preloader: true,
         gallery: {
             enabled: true
         },
@@ -203,3 +204,33 @@ $(document).ready(function() {
         return elementBottom > viewportTop && elementTop < viewportBottom;
     }
 });
+    $(document).ready(function () {
+        const $swiper = $('.serviceSwiper');
+        const $slides = $swiper.find('.swiper-slide');
+
+        if ($slides.length > 4) {
+            // Activate Swiper slider
+            new Swiper('.serviceSwiper', {
+                slidesPerView: 3,
+                spaceBetween: 30,
+                navigation: {
+                    nextEl: '.swiper-button-next',
+                    prevEl: '.swiper-button-prev',
+                },
+                breakpoints: {
+                    0: { slidesPerView: 1 },
+                    576: { slidesPerView: 2 },
+                    992: { slidesPerView: 3 }
+                }
+            });
+        } else {
+            // Fallback to Bootstrap grid
+            const $row = $('<div class="row g-4"></div>');
+            $slides.each(function () {
+                const $col = $('<div class="col-md-6 col-lg-3"></div>');
+                $col.append($(this).children()); // move content
+                $row.append($col);
+            });
+            $swiper.replaceWith($row); // replace swiper with row
+        }
+    });

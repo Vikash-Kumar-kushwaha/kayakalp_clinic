@@ -1002,6 +1002,10 @@ section {
     padding: var(--spacing-3);
 }
 
+.fixed-heigth-img {
+    height: 22rem;
+    object-fit: cover;
+}
 /*--------------------------------------------------------------
 # Responsive Styles
 --------------------------------------------------------------*/

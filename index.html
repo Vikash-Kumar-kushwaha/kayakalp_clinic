@@ -1,0 +1,817 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KAYAKALP CLINIC - Holistic Wellness Center</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Raleway:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- AOS Animation Library -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <!-- Preloader -->
+    <div id="preloader">
+        <div class="spinner"></div>
+    </div>
+
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg fixed-top" id="mainNav">
+        <div class="container">
+            <a class="navbar-brand d-flex align-items-center" href="#home">
+                <span class="brand-icon"><i class="fas fa-spa"></i></span>
+                <span class="brand-text">KAYAKALP CLINIC</span>
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive">
+                <i class="fas fa-bars"></i>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarResponsive">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="#home">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#services">Services</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#about">About Us</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#testimonials">Testimonials</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#gallery">Gallery</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+                    <li class="nav-item"><a class="btn btn-book" href="#booking">Book Appointment</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <header id="home" class="hero">
+        <div class="overlay"></div>
+        <div class="container h-100">
+            <div class="row h-100 align-items-center justify-content-center text-center">
+                <div class="col-lg-10 aos-init aos-animate" data-aos="fade-up" data-aos-delay="200">
+                    <h1>Your Journey to <span>Holistic Wellness</span></h1>
+                    <p class="lead">KAYAKALP CLINIC combines ancient wisdom with modern practices to restore balance and promote natural healing.</p>
+                    <div class="hero-buttons">
+                        <a href="#booking" class="btn btn-primary mb-2 mb-md-0 me-md-3">Book an Appointment</a>
+                        <a href="#services" class="btn btn-outline">Explore Services</a>
+                    </div>
+                    <a href="#services" class="scroll-down">
+                        <i class="fas fa-chevron-down bounce"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Services Section -->
+    <section id="services" class="section-padding">
+        <div class="container">
+            <div class="section-header text-center mb-5" data-aos="fade-up">
+                <h2>Our Specialized Services</h2>
+                <p>Discover our range of therapeutic treatments designed to restore your body's natural balance and promote healing.</p>
+                <div class="separator"><span><i class="fas fa-leaf"></i></span></div>
+            </div>
+            
+            <div class="row g-4">
+                <!-- Service 1 -->
+                <div class="col-md-6 col-lg-3" data-aos="fade-up" data-aos-delay="100">
+                    <div class="service-card">
+                        <div class="service-img">
+                            <img src="https://images.pexels.com/photos/3997993/pexels-photo-3997993.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="Chinese Moxibustion">
+                        </div>
+                        <div class="service-content">
+                            <div class="icon-wrapper">
+                                <i class="fas fa-fire"></i>
+                            </div>
+                            <h3>Chinese Moxibustion</h3>
+                            <p>A traditional Chinese therapy that involves burning dried mugwort on specific points of the body to promote healing and warmth.</p>
+                            <a href="#" class="service-link" data-bs-toggle="modal" data-bs-target="#serviceModal1">Learn More</a>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Service 2 -->
+                <div class="col-md-6 col-lg-3" data-aos="fade-up" data-aos-delay="200">
+                    <div class="service-card">
+                        <div class="service-img">
+                            <img src="https://images.pexels.com/photos/4046286/pexels-photo-4046286.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="Herbal Steam">
+                        </div>
+                        <div class="service-content">
+                            <div class="icon-wrapper">
+                                <i class="fas fa-cloud"></i>
+                            </div>
+                            <h3>Herbal Steam</h3>
+                            <p>A therapeutic treatment using herbal-infused steam to open pores, detoxify the body, and soothe respiratory issues.</p>
+                            <a href="#" class="service-link" data-bs-toggle="modal" data-bs-target="#serviceModal2">Learn More</a>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Service 3 -->
+                <div class="col-md-6 col-lg-3" data-aos="fade-up" data-aos-delay="300">
+                    <div class="service-card">
+                        <div class="service-img">
+                            <img src="https://images.pexels.com/photos/7089401/pexels-photo-7089401.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="Korean Acupuncture">
+                        </div>
+                        <div class="service-content">
+                            <div class="icon-wrapper">
+                                <i class="fas fa-thumbtack"></i>
+                            </div>
+                            <h3>Korean Acupuncture</h3>
+                            <p>A specialized form of acupuncture focusing on hand and ear points to restore energy balance and relieve pain.</p>
+                            <a href="#" class="service-link" data-bs-toggle="modal" data-bs-target="#serviceModal3">Learn More</a>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Service 4 (This is Chinese Moxibustion repeated, as you mentioned it twice) -->
+                <div class="col-md-6 col-lg-3" data-aos="fade-up" data-aos-delay="400">
+                    <div class="service-card">
+                        <div class="service-img">
+                            <img src="https://images.pexels.com/photos/8480541/pexels-photo-8480541.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="Cupping Therapy">
+                        </div>
+                        <div class="service-content">
+                            <div class="icon-wrapper">
+                                <i class="fas fa-mortar-pestle"></i>
+                            </div>
+                            <h3>Cupping Therapy</h3>
+                            <p>An ancient form of alternative medicine where cups are placed on the skin to create suction, improving circulation and reducing pain.</p>
+                            <a href="#" class="service-link" data-bs-toggle="modal" data-bs-target="#serviceModal4">Learn More</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="section-padding bg-light">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-6 mb-4 mb-lg-0" data-aos="fade-right">
+                    <div class="about-images">
+                        <div class="about-img-1">
+                            <img src="https://images.pexels.com/photos/3751086/pexels-photo-3751086.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="About Kayakalp Clinic" class="img-fluid">
+                        </div>
+                        <div class="about-img-2">
+                            <img src="https://images.pexels.com/photos/7919274/pexels-photo-7919274.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="Our Practitioners" class="img-fluid">
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6" data-aos="fade-left">
+                    <div class="section-header mb-4">
+                        <h2>About KAYAKALP CLINIC</h2>
+                        <div class="separator"><span><i class="fas fa-leaf"></i></span></div>
+                    </div>
+                    <h3 class="mb-4">Bringing Ancient Wisdom to Modern Wellness</h3>
+                    <p>At KAYAKALP CLINIC, we believe in the power of holistic healing approaches that have been refined over thousands of years. Our name "Kayakalp" refers to the rejuvenation of body, mind, and spirit - the foundation of true wellness.</p>
+                    <p>Founded in 2010 by Dr. Arya Sharma, our clinic combines time-tested Eastern therapeutic practices with modern wellness approaches to create personalized treatment plans for each client.</p>
+                    <p>Our team of certified practitioners brings decades of experience in traditional Chinese medicine, Korean healing arts, and Ayurvedic practices, ensuring you receive the highest quality care for your specific needs.</p>
+                    <div class="about-features">
+                        <div class="feature">
+                            <i class="fas fa-certificate"></i>
+                            <span>Certified Practitioners</span>
+                        </div>
+                        <div class="feature">
+                            <i class="fas fa-history"></i>
+                            <span>15+ Years Experience</span>
+                        </div>
+                        <div class="feature">
+                            <i class="fas fa-users"></i>
+                            <span>Personalized Care</span>
+                        </div>
+                    </div>
+                    <a href="#booking" class="btn btn-primary mt-4">Book Your Consultation</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section id="testimonials" class="section-padding">
+        <div class="container">
+            <div class="section-header text-center mb-5" data-aos="fade-up">
+                <h2>Client Testimonials</h2>
+                <p>Hear from our satisfied clients about their healing journeys at KAYAKALP CLINIC.</p>
+                <div class="separator"><span><i class="fas fa-leaf"></i></span></div>
+            </div>
+            
+            <div class="testimonial-slider" data-aos="fade-up" data-aos-delay="100">
+                <div class="row">
+                    <div class="col-md-12">
+                        <div id="testimonialCarousel" class="carousel slide" data-bs-ride="carousel">
+                            <div class="carousel-inner">
+                                <!-- Testimonial 1 -->
+                                <div class="carousel-item active">
+                                    <div class="testimonial-card">
+                                        <div class="testimonial-content">
+                                            <div class="quote-icon"><i class="fas fa-quote-left"></i></div>
+                                            <p>"After suffering from chronic back pain for years, I tried the Chinese moxibustion therapy at KAYAKALP CLINIC. I was amazed at how quickly I felt relief. Three sessions in, and my mobility has improved significantly. The practitioners are knowledgeable and truly care about your healing journey."</p>
+                                            <div class="client-info">
+                                                <div class="client-img">
+                                                    <img src="https://images.pexels.com/photos/1181686/pexels-photo-1181686.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="Priya Sharma">
+                                                </div>
+                                                <div>
+                                                    <h5>Priya Sharma</h5>
+                                                    <p>Marketing Executive</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- Testimonial 2 -->
+                                <div class="carousel-item">
+                                    <div class="testimonial-card">
+                                        <div class="testimonial-content">
+                                            <div class="quote-icon"><i class="fas fa-quote-left"></i></div>
+                                            <p>"The herbal steam therapy at KAYAKALP has been transformative for my respiratory issues. After trying various conventional treatments with limited success, I decided to give holistic methods a try. The improvement in my breathing and overall energy levels has been remarkable. The clinic atmosphere is so peaceful too!"</p>
+                                            <div class="client-info">
+                                                <div class="client-img">
+                                                    <img src="https://images.pexels.com/photos/220453/pexels-photo-220453.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="Rahul Mehta">
+                                                </div>
+                                                <div>
+                                                    <h5>Rahul Mehta</h5>
+                                                    <p>Software Engineer</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- Testimonial 3 -->
+                                <div class="carousel-item">
+                                    <div class="testimonial-card">
+                                        <div class="testimonial-content">
+                                            <div class="quote-icon"><i class="fas fa-quote-left"></i></div>
+                                            <p>"I was skeptical about acupuncture at first, but after suffering from migraines for over a decade, I was desperate for relief. The Korean acupuncture treatment at KAYAKALP has reduced both the frequency and intensity of my migraines. Dr. Sharma took the time to explain everything and made me feel completely at ease throughout the process."</p>
+                                            <div class="client-info">
+                                                <div class="client-img">
+                                                    <img src="https://images.pexels.com/photos/1239291/pexels-photo-1239291.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="Ananya Patel">
+                                                </div>
+                                                <div>
+                                                    <h5>Ananya Patel</h5>
+                                                    <p>School Teacher</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <button class="carousel-control-prev" type="button" data-bs-target="#testimonialCarousel" data-bs-slide="prev">
+                                <i class="fas fa-chevron-left"></i>
+                                <span class="visually-hidden">Previous</span>
+                            </button>
+                            <button class="carousel-control-next" type="button" data-bs-target="#testimonialCarousel" data-bs-slide="next">
+                                <i class="fas fa-chevron-right"></i>
+                                <span class="visually-hidden">Next</span>
+                            </button>
+                            <div class="carousel-indicators">
+                                <button type="button" data-bs-target="#testimonialCarousel" data-bs-slide-to="0" class="active"></button>
+                                <button type="button" data-bs-target="#testimonialCarousel" data-bs-slide-to="1"></button>
+                                <button type="button" data-bs-target="#testimonialCarousel" data-bs-slide-to="2"></button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Gallery Section -->
+    <section id="gallery" class="section-padding bg-light">
+        <div class="container">
+            <div class="section-header text-center mb-5" data-aos="fade-up">
+                <h2>Our Gallery</h2>
+                <p>Take a virtual tour of our clinic and treatment spaces.</p>
+                <div class="separator"><span><i class="fas fa-leaf"></i></span></div>
+            </div>
+            
+            <div class="row g-4" data-aos="fade-up" data-aos-delay="100">
+                <div class="col-md-4 col-sm-6 gallery-item">
+                    <a href="https://images.pexels.com/photos/3997993/pexels-photo-3997993.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" class="gallery-link">
+                        <div class="gallery-img">
+                            <img src="https://images.pexels.com/photos/3997993/pexels-photo-3997993.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="Moxibustion Treatment" class="img-fluid">
+                            <div class="gallery-overlay">
+                                <div class="gallery-info">
+                                    <h4>Moxibustion Treatment</h4>
+                                    <span><i class="fas fa-search-plus"></i></span>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                
+                <div class="col-md-4 col-sm-6 gallery-item">
+                    <a href="https://images.pexels.com/photos/4046286/pexels-photo-4046286.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" class="gallery-link">
+                        <div class="gallery-img">
+                            <img src="https://images.pexels.com/photos/4046286/pexels-photo-4046286.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="Herbal Steam Room" class="img-fluid">
+                            <div class="gallery-overlay">
+                                <div class="gallery-info">
+                                    <h4>Herbal Steam Room</h4>
+                                    <span><i class="fas fa-search-plus"></i></span>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                
+                <div class="col-md-4 col-sm-6 gallery-item">
+                    <a href="https://images.pexels.com/photos/7089401/pexels-photo-7089401.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" class="gallery-link">
+                        <div class="gallery-img">
+                            <img src="https://images.pexels.com/photos/7089401/pexels-photo-7089401.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="Acupuncture Session" class="img-fluid">
+                            <div class="gallery-overlay">
+                                <div class="gallery-info">
+                                    <h4>Acupuncture Session</h4>
+                                    <span><i class="fas fa-search-plus"></i></span>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                
+                <div class="col-md-4 col-sm-6 gallery-item">
+                    <a href="https://images.pexels.com/photos/3757942/pexels-photo-3757942.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" class="gallery-link">
+                        <div class="gallery-img">
+                            <img src="https://images.pexels.com/photos/3757942/pexels-photo-3757942.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="Reception Area" class="img-fluid">
+                            <div class="gallery-overlay">
+                                <div class="gallery-info">
+                                    <h4>Reception Area</h4>
+                                    <span><i class="fas fa-search-plus"></i></span>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                
+                <div class="col-md-4 col-sm-6 gallery-item">
+                    <a href="https://images.pexels.com/photos/3873973/pexels-photo-3873973.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" class="gallery-link">
+                        <div class="gallery-img">
+                            <img src="https://images.pexels.com/photos/3873973/pexels-photo-3873973.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="Treatment Room" class="img-fluid">
+                            <div class="gallery-overlay">
+                                <div class="gallery-info">
+                                    <h4>Treatment Room</h4>
+                                    <span><i class="fas fa-search-plus"></i></span>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                
+                <div class="col-md-4 col-sm-6 gallery-item">
+                    <a href="https://images.pexels.com/photos/8480541/pexels-photo-8480541.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" class="gallery-link">
+                        <div class="gallery-img">
+                            <img src="https://images.pexels.com/photos/8480541/pexels-photo-8480541.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="Cupping Therapy" class="img-fluid">
+                            <div class="gallery-overlay">
+                                <div class="gallery-info">
+                                    <h4>Cupping Therapy</h4>
+                                    <span><i class="fas fa-search-plus"></i></span>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Booking Section -->
+    <section id="booking" class="section-padding">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6 pe-lg-5" data-aos="fade-right">
+                    <div class="section-header mb-4">
+                        <h2>Schedule Your Appointment</h2>
+                        <div class="separator"><span><i class="fas fa-leaf"></i></span></div>
+                    </div>
+                    <p class="lead mb-4">Take the first step towards your wellness journey. Fill out the form to book an appointment with our expert practitioners.</p>
+                    <div class="booking-features">
+                        <div class="feature">
+                            <i class="fas fa-calendar-check"></i>
+                            <div>
+                                <h4>Easy Scheduling</h4>
+                                <p>Choose a time that works for you with our flexible booking system.</p>
+                            </div>
+                        </div>
+                        <div class="feature">
+                            <i class="fas fa-user-md"></i>
+                            <div>
+                                <h4>Expert Consultation</h4>
+                                <p>Each appointment begins with a thorough consultation to understand your needs.</p>
+                            </div>
+                        </div>
+                        <div class="feature">
+                            <i class="fas fa-comment-medical"></i>
+                            <div>
+                                <h4>Personalized Treatment</h4>
+                                <p>Receive a customized treatment plan tailored to your specific conditions.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6" data-aos="fade-left">
+                    <div class="booking-form">
+                        <form id="appointmentForm">
+                            <div class="form-floating mb-3">
+                                <input type="text" class="form-control" id="name" placeholder="Your Name" required>
+                                <label for="name">Your Name</label>
+                            </div>
+                            <div class="form-floating mb-3">
+                                <input type="email" class="form-control" id="email" placeholder="Your Email" required>
+                                <label for="email">Your Email</label>
+                            </div>
+                            <div class="form-floating mb-3">
+                                <input type="tel" class="form-control" id="phone" placeholder="Your Phone">
+                                <label for="phone">Your Phone</label>
+                            </div>
+                            <div class="form-floating mb-3">
+                                <select class="form-select" id="service" required>
+                                    <option value="" selected disabled>Select a service</option>
+                                    <option value="Chinese Moxibustion">Chinese Moxibustion</option>
+                                    <option value="Herbal Steam">Herbal Steam</option>
+                                    <option value="Korean Acupuncture">Korean Acupuncture</option>
+                                    <option value="Cupping Therapy">Cupping Therapy</option>
+                                </select>
+                                <label for="service">Select Service</label>
+                            </div>
+                            <div class="form-floating mb-3">
+                                <input type="date" class="form-control" id="date" required>
+                                <label for="date">Preferred Date</label>
+                            </div>
+                            <div class="form-floating mb-3">
+                                <select class="form-select" id="time" required>
+                                    <option value="" selected disabled>Select a time</option>
+                                    <option value="9:00 AM">9:00 AM</option>
+                                    <option value="10:00 AM">10:00 AM</option>
+                                    <option value="11:00 AM">11:00 AM</option>
+                                    <option value="12:00 PM">12:00 PM</option>
+                                    <option value="2:00 PM">2:00 PM</option>
+                                    <option value="3:00 PM">3:00 PM</option>
+                                    <option value="4:00 PM">4:00 PM</option>
+                                    <option value="5:00 PM">5:00 PM</option>
+                                </select>
+                                <label for="time">Preferred Time</label>
+                            </div>
+                            <div class="form-floating mb-3">
+                                <textarea class="form-control" id="message" placeholder="Additional Notes" style="height: 100px"></textarea>
+                                <label for="message">Additional Notes (Optional)</label>
+                            </div>
+                            <button type="submit" class="btn btn-primary w-100">Book Your Appointment</button>
+                        </form>
+                        <div id="bookingConfirmation" class="mt-3 alert alert-success d-none">
+                            Thank you for booking your appointment! We'll contact you shortly to confirm.
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="section-padding bg-light">
+        <div class="container">
+            <div class="section-header text-center mb-5" data-aos="fade-up">
+                <h2>Get in Touch</h2>
+                <p>Have questions? Our team is here to help. Reach out to us for more information.</p>
+                <div class="separator"><span><i class="fas fa-leaf"></i></span></div>
+            </div>
+            
+            <div class="row g-4">
+                <div class="col-lg-6" data-aos="fade-right">
+                    <div class="contact-info">
+                        <div class="contact-card">
+                            <div class="icon">
+                                <i class="fas fa-map-marker-alt"></i>
+                            </div>
+                            <div class="info">
+                                <h4>Our Location</h4>
+                                <p>123 Wellness Street, Harmony Gardens, New Delhi, 110001</p>
+                            </div>
+                        </div>
+                        <div class="contact-card">
+                            <div class="icon">
+                                <i class="fas fa-phone-alt"></i>
+                            </div>
+                            <div class="info">
+                                <h4>Phone Number</h4>
+                                <p>+91 98765 43210</p>
+                                <p>+91 11 2345 6789</p>
+                            </div>
+                        </div>
+                        <div class="contact-card">
+                            <div class="icon">
+                                <i class="fas fa-envelope"></i>
+                            </div>
+                            <div class="info">
+                                <h4>Email Address</h4>
+                                <p>info@kayakalpclinic.com</p>
+                                <p>appointments@kayakalpclinic.com</p>
+                            </div>
+                        </div>
+                        <div class="contact-card">
+                            <div class="icon">
+                                <i class="fas fa-clock"></i>
+                            </div>
+                            <div class="info">
+                                <h4>Opening Hours</h4>
+                                <p>Monday - Saturday: 9:00 AM - 6:00 PM</p>
+                                <p>Sunday: Closed</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="social-media mt-4">
+                        <h4>Follow Us</h4>
+                        <div class="social-links">
+                            <a href="#" class="social-link"><i class="fab fa-facebook-f"></i></a>
+                            <a href="#" class="social-link"><i class="fab fa-instagram"></i></a>
+                            <a href="#" class="social-link"><i class="fab fa-twitter"></i></a>
+                            <a href="#" class="social-link"><i class="fab fa-youtube"></i></a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-lg-6" data-aos="fade-left">
+                    <div class="contact-form">
+                        <form id="contactForm">
+                            <div class="form-floating mb-3">
+                                <input type="text" class="form-control" id="contactName" placeholder="Your Name" required>
+                                <label for="contactName">Your Name</label>
+                            </div>
+                            <div class="form-floating mb-3">
+                                <input type="email" class="form-control" id="contactEmail" placeholder="Your Email" required>
+                                <label for="contactEmail">Your Email</label>
+                            </div>
+                            <div class="form-floating mb-3">
+                                <input type="text" class="form-control" id="contactSubject" placeholder="Subject">
+                                <label for="contactSubject">Subject</label>
+                            </div>
+                            <div class="form-floating mb-3">
+                                <textarea class="form-control" id="contactMessage" placeholder="Your Message" style="height: 150px" required></textarea>
+                                <label for="contactMessage">Your Message</label>
+                            </div>
+                            <button type="submit" class="btn btn-primary w-100">Send Message</button>
+                        </form>
+                        <div id="contactConfirmation" class="mt-3 alert alert-success d-none">
+                            Thank you for your message! We'll get back to you as soon as possible.
+                        </div>
+                    </div>
+                    
+                    <div class="map-container mt-4">
+                        <div class="ratio ratio-16x9">
+                            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3502.0761623570504!2d77.20653077607547!3d28.625703775555802!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390cfd5b3e0c2a2b%3A0xbc45384195563a26!2sConnaught%20Place%2C%20New%20Delhi%2C%20Delhi%20110001!5e0!3m2!1sen!2sin!4v1699888888888!5m2!1sen!2sin" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="row g-4">
+                <div class="col-md-4">
+                    <div class="footer-info">
+                        <a href="#home" class="footer-logo d-flex align-items-center">
+                            <span class="logo-icon"><i class="fas fa-spa"></i></span>
+                            <span class="logo-text">KAYAKALP CLINIC</span>
+                        </a>
+                        <p class="mt-3">KAYAKALP CLINIC is dedicated to the art and science of holistic healing, offering traditional therapies that address the root causes of discomfort and disease.</p>
+                        <div class="footer-social">
+                            <a href="#"><i class="fab fa-facebook-f"></i></a>
+                            <a href="#"><i class="fab fa-twitter"></i></a>
+                            <a href="#"><i class="fab fa-instagram"></i></a>
+                            <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-6 col-md-2">
+                    <h5>Quick Links</h5>
+                    <ul class="footer-links">
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#services">Services</a></li>
+                        <li><a href="#about">About Us</a></li>
+                        <li><a href="#gallery">Gallery</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="col-6 col-md-2">
+                    <h5>Services</h5>
+                    <ul class="footer-links">
+                        <li><a href="#services">Chinese Moxibustion</a></li>
+                        <li><a href="#services">Herbal Steam</a></li>
+                        <li><a href="#services">Korean Acupuncture</a></li>
+                        <li><a href="#services">Cupping Therapy</a></li>
+                        <li><a href="#booking">Book Appointment</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-4">
+                    <h5>Newsletter</h5>
+                    <p>Subscribe to our newsletter for health tips and clinic updates.</p>
+                    <form class="newsletter-form">
+                        <div class="input-group">
+                            <input type="email" class="form-control" placeholder="Your Email Address" required>
+                            <button class="btn btn-primary" type="submit">
+                                <i class="fas fa-paper-plane"></i>
+                            </button>
+                        </div>
+                    </form>
+                    <div class="mt-3">
+                        <p class="mb-1"><i class="fas fa-phone me-2"></i> +91 98765 43210</p>
+                        <p><i class="fas fa-envelope me-2"></i> info@kayakalpclinic.com</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-6">
+                        <p>&copy; 2023 KAYAKALP CLINIC. All rights reserved.</p>
+                    </div>
+                    <div class="col-md-6 text-md-end">
+                        <div class="footer-bottom-links">
+                            <a href="#">Privacy Policy</a>
+                            <a href="#">Terms of Service</a>
+                            <a href="#">Cookie Policy</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Service Modals -->
+    <!-- Modal 1: Chinese Moxibustion -->
+    <div class="modal fade" id="serviceModal1" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog modal-lg modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Chinese Moxibustion</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="row align-items-center">
+                        <div class="col-md-6 mb-4 mb-md-0">
+                            <img src="https://images.pexels.com/photos/3997993/pexels-photo-3997993.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="Chinese Moxibustion" class="img-fluid rounded">
+                        </div>
+                        <div class="col-md-6">
+                            <h4>About Chinese Moxibustion</h4>
+                            <p>Moxibustion is a traditional Chinese medicine technique that involves burning dried mugwort (moxa) on particular points on the body. The purpose is to stimulate the flow of Qi (vital energy), strengthen the blood, and maintain general health.</p>
+                            
+                            <h5>Benefits:</h5>
+                            <ul>
+                                <li>Relieves chronic pain</li>
+                                <li>Improves circulation</li>
+                                <li>Strengthens immune system</li>
+                                <li>Reduces inflammation</li>
+                                <li>Supports digestive health</li>
+                            </ul>
+                            
+                            <h5>Treatment Details:</h5>
+                            <p><strong>Duration:</strong> 45-60 minutes</p>
+                            <p><strong>Recommended:</strong> Initial series of 4-6 sessions</p>
+                            <p><strong>Price:</strong> ₹1,800 per session</p>
+                            
+                            <a href="#booking" class="btn btn-primary mt-3" data-bs-dismiss="modal">Book This Treatment</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <!-- Modal 2: Herbal Steam -->
+    <div class="modal fade" id="serviceModal2" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog modal-lg modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Herbal Steam Therapy</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="row align-items-center">
+                        <div class="col-md-6 mb-4 mb-md-0">
+                            <img src="https://images.pexels.com/photos/4046286/pexels-photo-4046286.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="Herbal Steam" class="img-fluid rounded">
+                        </div>
+                        <div class="col-md-6">
+                            <h4>About Herbal Steam Therapy</h4>
+                            <p>Herbal steam therapy uses carefully selected medicinal herbs and plants that release therapeutic compounds when heated. As you inhale the steam, these compounds help open airways, clear congestion, and promote detoxification through the skin.</p>
+                            
+                            <h5>Benefits:</h5>
+                            <ul>
+                                <li>Opens respiratory passages</li>
+                                <li>Detoxifies through the skin</li>
+                                <li>Relieves muscle tension</li>
+                                <li>Improves circulation</li>
+                                <li>Enhances relaxation and stress relief</li>
+                            </ul>
+                            
+                            <h5>Treatment Details:</h5>
+                            <p><strong>Duration:</strong> 30-45 minutes</p>
+                            <p><strong>Recommended:</strong> Weekly sessions for optimal results</p>
+                            <p><strong>Price:</strong> ₹1,500 per session</p>
+                            
+                            <a href="#booking" class="btn btn-primary mt-3" data-bs-dismiss="modal">Book This Treatment</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <!-- Modal 3: Korean Acupuncture -->
+    <div class="modal fade" id="serviceModal3" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog modal-lg modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Korean Acupuncture</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="row align-items-center">
+                        <div class="col-md-6 mb-4 mb-md-0">
+                            <img src="https://images.pexels.com/photos/7089401/pexels-photo-7089401.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="Korean Acupuncture" class="img-fluid rounded">
+                        </div>
+                        <div class="col-md-6">
+                            <h4>About Korean Acupuncture</h4>
+                            <p>Korean acupuncture is distinguished by its unique approach to diagnosis and treatment. It emphasizes the Saam Four Needle Technique, which uses fewer needles than traditional Chinese acupuncture and focuses on specific energetic relationships between the meridians.</p>
+                            
+                            <h5>Benefits:</h5>
+                            <ul>
+                                <li>Pain relief and management</li>
+                                <li>Stress reduction</li>
+                                <li>Improved sleep quality</li>
+                                <li>Enhanced immune function</li>
+                                <li>Hormonal balance</li>
+                            </ul>
+                            
+                            <h5>Treatment Details:</h5>
+                            <p><strong>Duration:</strong> 60 minutes</p>
+                            <p><strong>Recommended:</strong> Initial series of 6-8 treatments</p>
+                            <p><strong>Price:</strong> ₹2,200 per session</p>
+                            
+                            <a href="#booking" class="btn btn-primary mt-3" data-bs-dismiss="modal">Book This Treatment</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <!-- Modal 4: Cupping Therapy -->
+    <div class="modal fade" id="serviceModal4" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog modal-lg modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Cupping Therapy</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="row align-items-center">
+                        <div class="col-md-6 mb-4 mb-md-0">
+                            <img src="https://images.pexels.com/photos/8480541/pexels-photo-8480541.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="Cupping Therapy" class="img-fluid rounded">
+                        </div>
+                        <div class="col-md-6">
+                            <h4>About Cupping Therapy</h4>
+                            <p>Cupping therapy is an ancient form of alternative medicine where therapists place special cups on the skin to create suction. This suction facilitates healing by improving blood flow, reducing inflammation, and promoting relaxation.</p>
+                            
+                            <h5>Benefits:</h5>
+                            <ul>
+                                <li>Relieves muscle tension and pain</li>
+                                <li>Improves blood circulation</li>
+                                <li>Aids in detoxification</li>
+                                <li>Reduces inflammation</li>
+                                <li>Promotes tissue healing</li>
+                            </ul>
+                            
+                            <h5>Treatment Details:</h5>
+                            <p><strong>Duration:</strong> 30-45 minutes</p>
+                            <p><strong>Recommended:</strong> 1-2 sessions per month</p>
+                            <p><strong>Price:</strong> ₹1,600 per session</p>
+                            
+                            <a href="#booking" class="btn btn-primary mt-3" data-bs-dismiss="modal">Book This Treatment</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Back to Top Button -->
+    <a href="#" class="back-to-top">
+        <i class="fas fa-chevron-up"></i>
+    </a>
+
+    <!-- jQuery -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <!-- Bootstrap JS Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Magnific Popup -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/jquery.magnific-popup.min.js"></script>
+    <!-- AOS Animation Library -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <!-- Custom JS -->
+    <script src="js/script.js"></script>
+</body>
+</html>
